@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from "react";
+import Navbar from "./componant/Navbar";
+import Hero from "./componant/Hero";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+  );
 
-export default App
+  return (
+    <div data-bs-theme={theme}>
+      <Navbar theme={theme} setTheme={setTheme} />
+      <Hero theme={theme}/>
+    </div>
+  );
+};
+
+export default App;

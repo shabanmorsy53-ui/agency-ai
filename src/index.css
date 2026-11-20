@@ -1,0 +1,44 @@
+
+
+.cont{
+  width: fit-content;
+}
+
+.headT{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 span{
+  color: rgb(39, 39, 209);
+}
+
+.ptext{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.hero {
+  min-height: 100vh;
+  transition: 0.3s ease;
+}
+
+.hero.light {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.hero.dark {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.hero h2,
+.hero p,
+.hero h6 {
+  color: inherit;
+}
+
+.hero .cont {
+  border-color: currentColor !important;
+}
